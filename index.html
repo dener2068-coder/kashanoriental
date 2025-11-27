@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kashan - Tapetes Orientales</title>
+<style>
+body {margin:0; font-family:'Segoe UI', sans-serif; background-color:#f6f1eb; color:#3a2f2a;}
+header {background:#2b1f1c; color:white; padding:25px 40px; text-align:center; font-size:2rem; letter-spacing:2px;}
+.hero {background-image:url('https://images.unsplash.com/photo-1582582494700-1c6f9b8d4018'); background-size:cover; background-position:center; height:55vh; display:flex; align-items:center; justify-content:center; color:white; text-shadow:0 4px 10px #000; font-size:3rem; animation:fadeIn 1.8s ease-in-out;}
+.catalogo {padding:40px; text-align:center;}
+.catalogo h2 {font-size:2rem; margin-bottom:20px;}
+.tapetes {display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:25px;}
+.item {background:white; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.1); overflow:hidden; transform:scale(0.95); transition:0.4s; animation:fadeUp 1s ease;}
+.item:hover {transform:scale(1); box-shadow:0 8px 25px rgba(0,0,0,0.2);}
+.item img {width:100%; height:220px; object-fit:cover;}
+.item h3 {margin:10px 0;}
+.contacto {padding:40px; background:#d8c4a8; text-align:center;}
+form {max-width:450px; margin:auto; display:flex; flex-direction:column; gap:15px;}
+input, textarea {padding:12px; border-radius:8px; border:none; font-size:1rem;}
+button {background:#2b1f1c; color:white; padding:14px; border-radius:8px; border:none; font-size:1rem; cursor:pointer; transition:0.3s;}
+button:hover {background:#4a312d;}
+.whatsapp {position:fixed; bottom:25px; right:25px; background:#25D366; color:white; padding:15px 20px; border-radius:50px; font-size:1.2rem; text-decoration:none; box-shadow:0 4px 10px rgba(0,0,0,0.3);}
+@keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
+@keyframes fadeUp {from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);}}
+</style>
+</head>
+<body>
+<header>KASHAN — Tapetes Orientales</header>
+<div class="hero">Elegancia y Arte en Cada Tapete</div>
+<section class="catalogo">
+<h2>Catálogo Premium</h2>
+<div class="tapetes">
+<div class="item"><img src="https://images.unsplash.com/photo-1582582494700-1c6f9b8d4018" alt="Tapete oriental"><h3>Tapete Persa Rojo</h3></div>
+<div class="item"><img src="https://images.unsplash.com/photo-1600585153490-76fb20a32671" alt="Tapete oriental"><h3>Tapete Kashan Azul</h3></div>
+<div class="item"><img src="https://images.unsplash.com/photo-1532989029401-fca5f19fbd7e" alt="Tapete oriental"><h3>Tapete Clásico Beige</h3></div>
+</div></section>
+<section class="contacto">
+<h2>Contacto</h2>
+<form action="https://formsubmit.co/estándar2@hotmail.com" method="POST">
+<input type="text" name="nombre" placeholder="Tu nombre" required>
+<input type="email" name="correo" placeholder="Tu correo" required>
+<textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+<input type="hidden" name="_captcha" value="false">
+<button type="submit">Enviar mensaje</button>
+</form>
+</section>
+<a class="whatsapp" href="https://wa.me/524431570600?text=Hola,%20estoy%20interesado%20en%20tapetes%20orientales" target="_blank">WhatsApp</a>
+</body></html>
